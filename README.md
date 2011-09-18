@@ -47,11 +47,12 @@ The first element in the array is the type, the other elements in the array depe
 ## TODO
 
 There are several things still to do:
-* Entity decoding of text. Although much of the code is already there, it is not yet Unicode ready.
-* Add routines for entity encoding.
-* Add support for Buffers. Right now only Strings are supported.
-* Add some additional robustness checks.
-* Compile on other platforms besides Linux. The code should be portable, but has never been tested on any other platform besides Linux. So if you have success compiling and using this on OSX or Windows please let us know.
+
+ * Entity decoding of text. Although much of the code is already there, it is not yet Unicode ready.
+ * Add routines for entity encoding.
+ * Add support for Buffers. Right now only Strings are supported.
+ * Add some additional robustness checks.
+ * Compile on other platforms besides Linux. The code should be portable, but has never been tested on any other platform besides Linux. So if you have success compiling and using this on OSX or Windows please let us know.
 
 ## Background
 
