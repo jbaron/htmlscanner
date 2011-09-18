@@ -1,0 +1,9 @@
+{
+ "name" : "htmlscanner",
+ "description": "A HTML scanner",
+ "author" : "JBaron <info@jbaron.com>",
+ "version" : "0.4.1",
+ "main" : "lib/htmlscanner",
+ "license" : "MIT"
+}
+
