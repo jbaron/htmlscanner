@@ -8,16 +8,25 @@ The core of the scanner module is a fast C++ module and is for 80% based on the 
 
 ## Installation
 
-Just run the install.sh script. 
+Just run the npm install command:
 
 ```bash
-$ ./install.sh
+$ npm install htmlscanner
 ```
 
-You should now have a file called **htmlscanner.node** in the lib directory. We use node-wf to build this module. Please note that older versions of node-waf use a different build directory. In that case you should find the file somewhere under the build/default directory. There are also some simple test cases included with this module. Just go to the test directory and type for example:
+Or if you like to do it yourself:
 
 ```bash
-$ node test_simple.js
+$ git clone git@github.com:jbaron/htmlscanner.git
+$ cd htmlscanner
+$ node-waf configure build install
+```
+
+
+You should now have a file called **htmlscanner.node** in the lib directory. We use node-waf to build this module. Please note that older versions of node-waf use a different build directory. In that case you should find the file somewhere under the build/default directory. There are also some simple test cases included with this module. Just type for example:
+
+```bash
+$ node test/test_simple.js
 ```
 
 ## Usage

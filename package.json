@@ -1,9 +1,19 @@
 {
  "name" : "htmlscanner",
- "description": "A HTML scanner",
+ "description": "A fast C++ HTML scanner that can also parse badly formed HTML",
  "author" : "JBaron <info@jbaron.com>",
- "version" : "0.4.1",
- "main" : "lib/htmlscanner",
+ "scripts": {
+	"install": "node-waf configure build install"
+  },
+  "engines": {
+		"node": ">=0.5.2"
+  },
+  "repository": {
+		"type": "git",
+		"url": "git://github.com:jbaron/htmlscanner.git"
+  },
+ "version" : "0.7.0",
+ "main" : "./lib/htmlscanner",
  "license" : "MIT"
 }
 
