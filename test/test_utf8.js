@@ -1,6 +1,6 @@
 var Scanner = require("../lib/htmlscanner").Scanner;
 var fs = require("fs");
-var sys = require("sys");
+var util = require('util');
 
 var html = fs.readFileSync("UTF-8-demo.html","utf-8");
 
@@ -8,25 +8,25 @@ var html = fs.readFileSync("UTF-8-demo.html","utf-8");
 function prettyPrint(x) {
 		switch (x[0]) {
 			case -1:
-				sys.print("error");
+				util.print("error");
 			case 1: // TAG start
-				sys.print("\n<" + x[1]);
+				util.print("\n<" + x[1]);
 				// Iterate over the attributes;
 				for (var i=2;i<x.length;) {
-					sys.print(" " + x[i++]);
-					sys.print('="' + x[i++] + '"');
+					util.print(" " + x[i++]);
+					util.print('="' + x[i++] + '"');
 				} 
-				sys.print(">");			
+				util.print(">");			
 				break;
 			case 2: // Tag end
-				sys.print("\n</" + x[1] + ">");
+				util.print("\n</" + x[1] + ">");
 				break;
 			
 			case 4: // Text
-				sys.print(x[1]);
+				util.print(x[1]);
 				break
 			case 10:
-				sys.print("<![CDATA[" + x[1] + "]]>");
+				util.print("<![CDATA[" + x[1] + "]]>");
 				break;
 		}
 }

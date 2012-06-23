@@ -1,6 +1,6 @@
 var Scanner = require("../lib/htmlscanner").Scanner;
 var fs = require("fs");
-var sys = require("sys");
+var util = require('util');
 
 
 var html = 
