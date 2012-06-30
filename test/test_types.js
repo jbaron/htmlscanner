@@ -1,7 +1,4 @@
 var Scanner = require("../lib/htmlscanner").Scanner;
-var fs = require("fs");
-var sys = require("sys");
-
 
 var html = 
 	"<!DOCTYPE html>" + 
